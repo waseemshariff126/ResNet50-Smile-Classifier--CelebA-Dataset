@@ -31,3 +31,7 @@ Github- http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 - [x] Download the ResNet50.py from this repository
 - [x] In the console run:
      * python ResNet50.py
+### References
+[1] Andrew Ng. Deep learning course and specialization in convolutional neural network, 2018
+
+[2] Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou. Deep Learning Face Attributes in the Wild. 2015
