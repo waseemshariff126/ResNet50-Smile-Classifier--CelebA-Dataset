@@ -3,7 +3,7 @@
 "Synthetic Face ID project" requires training an alternative prediction model that will use the CelebA given
 dataset annotation on the ResNet50 network to better determine features of synthesized images. We choose smile (expression) facial attributes for analysis. Note that we can always plug in more attributes easily as long as the attribute detector is available.
 
-This model is trained to predict smile. Smile attribute is learnt as bi-classification problem with binary crossentropy loss. As images produced by PGGAN and StyleGAN are with 1024×1024 resolution, we resize them to 220×220 before feeding them to this classification model.
+This model is trained to predict smile. Smile attribute is learnt as bi-classification problem with binary crossentropy loss, Adam optimizer (lr = 0.01) and Early Stopping as regularizer. As images produced by PGGAN and StyleGAN are with 1024×1024 resolution, we resize them to 224×224 before feeding them to this classification model.
 
 The classifier will automatically divide the data into train validate and test sets. The classifier will use Keras's "Flow from Dataframe" method, as CelebA (training dataset) has both face images and annotation file.  
 
